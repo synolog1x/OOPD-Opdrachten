@@ -2,8 +2,9 @@ void setup(){
 size(500,500);
 
 
-println(floatDelen(5,2));
-println(1 / 0);
+println(floatDelen(5,2);
+println(floatDelen(5,2.0));
+println(1/0);
 
 
 
