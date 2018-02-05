@@ -1,0 +1,1 @@
+testGetal is een int, testGetallen is een intarray.

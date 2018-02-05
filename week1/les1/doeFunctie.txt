@@ -1,0 +1,25 @@
+/* ONDERDEEL A 
+ uit de tweedimensionele array hetVeld wordt een array gehaald. 
+ Deze wordt doorgelopen en de getallen uit die array worden bij elkaar opgeteld.
+ globaal:
+ int[][] hetVeld = {
+                    {1, 6, 3},
+                    {3, 2, 9},
+                  };
+
+doeFunctie 
+ int[][] a = {
+                    {1, 6, 3},
+                    {3, 2, 9},
+                  };
+int b = 1
+int d = {3,2,9}
+int c is eerst 3, daarna 3+2, daarna 3+2+9
+ 
+ 
+ ONDERDEEL B
+ ArrayIndexOutOfBoundsException: de opgevraagde index bestaat niet, de array is korter.
+ 
+ ONDERDEEL C
+ zie A. 
+ */
