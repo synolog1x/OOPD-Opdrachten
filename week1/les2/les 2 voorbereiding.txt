@@ -1,0 +1,11 @@
+Geheugenmodel volgorde
+e,d,f,a,c,b
+
+pijl in het geheugenmodel
+A. Dat is een referentie naar een ander stuk geheugen.
+B. Begint bij een variable en verwijst naar een stackframe.
+
+Geheugenmodel doeKeerTwee
+Staat in schrift.
+
+C. Bij testgetal wordt een nieuwe variable gemaakt in de functie, bij testGetallen wordt er alleen een verwijzing gemaakt.
