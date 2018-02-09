@@ -9,16 +9,25 @@ class Damsteen {
     this.kleur = kleur;
   }
 }
-
+ Damsteen witteSteen1 = new Damsteen(100, 100, 30, #ffffff);
+   Damsteen witteSteen2 = new Damsteen(200 , 200, 30, #ffffff);
+  Damsteen zwarteSteen1 = new Damsteen(300, 300, 30, #000000);
+    Damsteen zwarteSteen2 = new Damsteen(300, 400, 30, #000000);
+  
+  
+  Damsteen[] stenen = {witteSteen1, witteSteen2, zwarteSteen1, zwarteSteen2};
+  
 void setup() {
   size(500,500);
-  Damsteen steen1 = new Damsteen(100, 100, 30, #ffffff);
-  Damsteen steen2 = new Damsteen(300, 300, 30, #000000);
-  Damsteen[] stenen = {steen1, steen2};
+ smooth(3);
 
-  tekenDamStenen(stenen);
+  
 }
 
+
+void draw(){
+tekenDamStenen(stenen);
+}
 
 
 void tekenDamStenen(Damsteen[] stenen) {
