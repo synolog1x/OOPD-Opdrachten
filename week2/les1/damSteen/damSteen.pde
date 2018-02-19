@@ -23,25 +23,26 @@ class Damsteen {
     ellipse(x, y, diameter, diameter);
   }
 
-void isGeselecteerd() {
-  if (mouseX >= x && mouseX <= x+diameter && mouseY >= y && mouseY <= y+diameter) {
-    isGeselecteerd = true;
-  } else {
-    isGeselecteerd = false;
+  void isGeselecteerd() {
+    if (mouseX >= x && mouseX <= x+diameter && mouseY >= y && mouseY <= y+diameter) {
+      isGeselecteerd = true;
+    } else {
+      isGeselecteerd = false;
+    }
   }
-}
 }
 
 
 
 int grootte = 50;
-Damsteen witteSteen1 = new Damsteen(100, 50, grootte, #ffffff);
-Damsteen witteSteen2 = new Damsteen(200, 200, grootte, #ffffff);
-Damsteen zwarteSteen1 = new Damsteen(300, 300, grootte, #000000);
-Damsteen zwarteSteen2 = new Damsteen(300, 400, grootte, #000000);
 
 
-Damsteen[] stenen = {witteSteen1, witteSteen2, zwarteSteen1, zwarteSteen2};
+//MOOIER
+Damsteen[] stenen = new Damsteen[]{ new Damsteen(100, 50, grootte, #ffffff), 
+  new Damsteen(200, 200, grootte, #ffffff), 
+  new Damsteen(300, 300, grootte, #000000), 
+  new Damsteen(300, 400, grootte, #000000)
+};
 
 void setup() {
   size(500, 500);
@@ -54,7 +55,6 @@ void draw() {
   for (int i=0; i<stenen.length; i++) {
     stenen[i].tekenSteen();
   }
-
 }
 
 void mouseClicked() {
