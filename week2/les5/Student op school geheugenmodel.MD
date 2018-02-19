@@ -1,1 +1,1 @@
-![geheugenmodel "student op school"](././././images/geheugenmodel1.jpg)
+![geheugenmodel "student op school"](https://github.com/synolog1x/OOPD-Opdrachten/blob/master/images/geheugenmodel1.jpg)
