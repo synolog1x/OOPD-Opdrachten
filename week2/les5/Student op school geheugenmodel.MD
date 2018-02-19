@@ -1,0 +1,1 @@
+![geheugenmodel "student op school"](./images/geheugenmodel1.jpg)
