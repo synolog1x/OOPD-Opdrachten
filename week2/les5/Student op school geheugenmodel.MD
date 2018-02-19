@@ -1,1 +1,1 @@
-![geheugenmodel "student op school"](../../../images/geheugenmodel1.jpg)
+![geheugenmodel "student op school"](././././images/geheugenmodel1.jpg)
