@@ -46,4 +46,10 @@ class Slider {
     fill(#2257F0);
     rect(x + huidigePositie * blokjeBreedte, y, blokjeBreedte, hoogte);
   }
+
+
+String toString(){
+return "de huidige positie is: " + huidigePositie;
+}
+
 }

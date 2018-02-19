@@ -10,4 +10,5 @@ void setup() {
 void draw() {
   s1.bepaalPositie();
   s1.teken();
+  println(s1);
 }
