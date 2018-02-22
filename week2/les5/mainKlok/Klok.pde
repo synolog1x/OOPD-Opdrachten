@@ -7,9 +7,8 @@ Klok(float x, float y, float breedte){
 this.x = x;
 this.y = y;
 this.breedte = breedte;
-this.hoogte = breedte * 0.4;
-urenTeller = new Teller(24,x,y,breedte /2, hoogte);
-minutenTeller = new Teller(60, x+breedte/2, y, breedte/2, hoogte);
+urenTeller = new Teller(24,x,y,breedte /2);
+minutenTeller = new Teller(60, x+breedte/2, y, breedte/2);
 }
 
 void tik(){

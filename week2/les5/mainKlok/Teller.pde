@@ -2,13 +2,13 @@ class Teller {
 int maximum, waarde;
 float x,y, breedte,hoogte;
 
-Teller(int maximum, float x, float y, float breedte, float hoogte){
+Teller(int maximum, float x, float y, float breedte){
 this.maximum = maximum;
 waarde = 0;
 this.x = x;
 this.y = y;
 this.breedte = breedte;
-this.hoogte = hoogte;
+this.hoogte = breedte * 0.8;
 
 }
   
