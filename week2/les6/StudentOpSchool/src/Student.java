@@ -1,3 +1,4 @@
+import oopd.les06.School;
 
 public class Student {
 	  private String naam;
