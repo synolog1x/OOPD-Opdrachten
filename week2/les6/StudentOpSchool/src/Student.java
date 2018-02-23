@@ -5,9 +5,17 @@ public class Student {
 	  private School school;
 	  
 	  public Student(String naam, int nummer, School school) {
-	    this.naam  = naam;
+	    this.setNaam(naam);
 	    this.nummer = nummer;
 	    this.school = school;
 	  }
+
+	public String getNaam() {
+		return naam;
+	}
+
+	public void setNaam(String naam) {
+		this.naam = naam;
+	}
 
 }
