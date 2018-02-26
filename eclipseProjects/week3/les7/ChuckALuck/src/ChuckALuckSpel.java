@@ -1,6 +1,6 @@
 public class ChuckALuckSpel {
 	private int geluksGetal, saldo, inzet, ronde;
-	private Dobbelbeker dobbelBeker;
+	public Dobbelbeker dobbelBeker;
 
 	public ChuckALuckSpel(int saldo) {
 		this.saldo = saldo;
@@ -13,8 +13,8 @@ public class ChuckALuckSpel {
 		this.geluksGetal = nummer;
 		this.inzet = inzet;
 		int komtVoor = 0;
-		for (int i = 0; i < dobbelBeker.ds.length; i++) {
-			if(dobbelBeker.ds[i].getLaatstGedobbeld() == nummer) {
+		for (int i = 0; i < dobbelBeker.dobbelStenen.length; i++) {
+			if(dobbelBeker.dobbelStenen[i].getLaatstGedobbeld() == nummer) {
 				komtVoor++;
 			}
 		}

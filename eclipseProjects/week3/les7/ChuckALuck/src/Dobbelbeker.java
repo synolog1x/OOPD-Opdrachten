@@ -1,22 +1,22 @@
 public class Dobbelbeker {
-	Dobbelsteen[] ds;
+	Dobbelsteen[] dobbelStenen;
 			
 	public Dobbelbeker(int numberOfDice) {
-		this.ds = new Dobbelsteen[numberOfDice];
-		for(int i=0; i<ds.length;i++) {
-			ds[i] = new Dobbelsteen();			
+		this.dobbelStenen = new Dobbelsteen[numberOfDice];
+		for(int i=0; i<dobbelStenen.length;i++) {
+			dobbelStenen[i] = new Dobbelsteen();			
 		}		
 	}
 	
-	public void rollDice() {
-		for(Dobbelsteen steen: ds) {
-			steen.dobbel();			
+	public void dobbel() {
+		for(int i = 0; i < dobbelStenen.length; i++) {
+			dobbelStenen[i].dobbel();			
 		}
 	}
 	
 	public String toString() {
 		String tmp="";
-		for(Dobbelsteen steen: ds) {
+		for(Dobbelsteen steen: dobbelStenen) {
 			tmp += " "+steen.getLaatstGedobbeld();
 		}		
 		return "U heeft gegooid:"+tmp;

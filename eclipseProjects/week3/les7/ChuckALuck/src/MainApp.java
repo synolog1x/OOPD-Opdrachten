@@ -4,6 +4,7 @@ public class MainApp {
 		
 		spel.speelRonde(3, 5);
 		System.out.println(spel);
+		System.out.println(spel.dobbelBeker);
 		
 		spel.speelRonde(3, 20);
 		System.out.println(spel);
