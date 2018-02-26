@@ -1,16 +1,14 @@
 public class Teller {
 	private int maximum, waarde;
 	private float x, y, breedte, hoogte;
-	private KlokProgramma app;
 
-	public Teller(KlokProgramma p, int maximum, float x, float y, float breedte) {
+	public Teller(int maximum, float x, float y, float breedte) {
 		this.maximum = maximum;
 		setWaarde(0);
 		this.x = x;
 		this.y = y;
 		this.breedte = breedte;
 		this.hoogte = breedte * 0.8f;
-		app = p;
 	}
 
 
@@ -28,7 +26,7 @@ public class Teller {
 
 	}
 
-	public void tekenTeller() {
+	public void tekenTeller(KlokProgramma app) {
 		app.rectMode(app.CENTER);
 		app.noStroke();
 		app.fill(0);
@@ -42,13 +40,6 @@ public class Teller {
 
 	}
 	
-	public KlokProgramma getApp() {
-		return app;
-	}
-
-	public void setApp(KlokProgramma app) {
-		this.app = app;
-	}
 
 	public int getWaarde() {
 		return waarde;

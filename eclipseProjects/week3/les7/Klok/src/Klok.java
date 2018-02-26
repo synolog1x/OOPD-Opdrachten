@@ -3,9 +3,9 @@ public class Klok {
 	private Teller urenTeller;
 
 
-	public Klok(KlokProgramma p, float x, float y, float breedte) {
-		urenTeller = new Teller(p, 24, x, y, breedte / 2);
-		minutenTeller = new Teller(p, 60, x + breedte / 2, y, breedte / 2);
+	public Klok(float x, float y, float breedte) {
+		urenTeller = new Teller(24, x, y, breedte / 2);
+		minutenTeller = new Teller(60, x + breedte / 2, y, breedte / 2);
 	}
 
 	public void tik() {
@@ -20,9 +20,9 @@ public class Klok {
 		urenTeller.setWaarde(uren);
 	}
 
-	public void tekenKlok() {
-		urenTeller.tekenTeller();
-		minutenTeller.tekenTeller();
+	public void tekenKlok(KlokProgramma app) {
+		urenTeller.tekenTeller(app);
+		minutenTeller.tekenTeller(app);
 
 	}
 
@@ -30,16 +30,6 @@ public class Klok {
 		return "Het is nu: " + urenTeller.getWaarde() + ":" + minutenTeller.getWaarde();
 
 	}
-	
-	public KlokProgramma getApp() {
-		return urenTeller.getApp();
-	}
-
-	public void setApp(KlokProgramma app) {
-		urenTeller.setApp(app);
-		minutenTeller.setApp(app);
-	}
-
 
 	public float getX() {
 		return urenTeller.getX();

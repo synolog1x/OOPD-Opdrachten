@@ -13,14 +13,14 @@ public class KlokProgramma extends PApplet {
 	}
 
 	public void setup() {
-		deKlok = new Klok(this, 150, 100, 200);
+		deKlok = new Klok(150, 100, 200);
 		deKlok.setTijd(23, 58);
 	}
 
 	public void draw() {
 		background(255);
 		deKlok.tik();
-		deKlok.tekenKlok();
+		deKlok.tekenKlok(this);
 		println(deKlok);
 	}
 }
