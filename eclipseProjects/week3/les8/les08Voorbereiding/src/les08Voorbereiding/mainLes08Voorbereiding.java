@@ -6,10 +6,10 @@ public class mainLes08Voorbereiding {
 
 	public static void main(String[] args) {
 
-		
-		opgaveA();
-		opgaveC();
-		//KAN NIET: opgaveForEach();
+//		
+//		opgaveA();
+//		opgaveC();
+	 opgaveForEach();
 		
 	}
 
