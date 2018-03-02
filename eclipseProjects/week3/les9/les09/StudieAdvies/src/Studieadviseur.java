@@ -6,9 +6,6 @@ public class Studieadviseur {
 			if (s.getCijfers()[i] >= 6) {
 				aantalZesOfHoger++;
 			}
-
-			
-
 		}
 		if (aantalZesOfHoger >= 4) {
 			return true;
