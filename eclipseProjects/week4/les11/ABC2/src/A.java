@@ -4,5 +4,9 @@ public class A {
 	public String toString() {
 		return "A";
 	}
+	
+	public void doA() {
+		System.out.println("AA");
+	}
 
 }

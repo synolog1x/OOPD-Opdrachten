@@ -10,8 +10,8 @@ public class FigurenApp extends PApplet {
 		size(500, 500);
 	}
 
-	Cirkel cirkel;
-	Rechthoek rechthoek;
+	Figuur cirkel;
+	Figuur rechthoek;
 
 	public void setup() {
 		cirkel = new Cirkel(100, 100, 50);
@@ -22,8 +22,8 @@ public class FigurenApp extends PApplet {
 
 	public void draw() {
 		background(0);
-		cirkel.tekenCirkel(this);
-		rechthoek.tekenRechthoek(this);
+		cirkel.teken(this);
+		rechthoek.teken(this);
 		
 		
 		cirkel.doeStap(); 

@@ -5,4 +5,8 @@ public class C extends B {
 		return "C";
 	}
 
+	public void doC() {
+		System.out.println("CC");
+	}
+	
 }

@@ -5,4 +5,8 @@ public class B extends A{
 		return "B";
 	}	
 
+	public void doB() {
+		System.out.println("BB");
+	}
+	
 }
