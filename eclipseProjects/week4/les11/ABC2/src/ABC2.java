@@ -9,13 +9,39 @@ public class ABC2 {
 	
 		C c3 = new C();
 		
-		System.out.println(a1.toString());
-		System.out.println(a2.toString());
-		System.out.println(a3.toString());
+	
+		//C castA1naarC = (C) a1;
+		//C castA2naarC = (C) a2;
+		C castA3naarC = (C) a3;
 		
-		System.out.println(b2.toString());
-		System.out.println(b3.toString());
+		A castB2naarA = (A) b2;
+		A castB3naarA = (A) b3;
 		
-		System.out.println(c3.toString());	
+		B castC3naarB = (B) c3;
+		
+//		castA1naarC.doA();
+//		castA1naarC.doB();
+//		castA1naarC.doC();
+		
+//		castA2naarC.doA();
+//		castA2naarC.doB();
+//		castA2naarC.doC();
+		
+		castA3naarC.doA();
+		castA3naarC.doB();
+		castA3naarC.doC();
+		
+		castB2naarA.doA();
+		
+		
+		castB3naarA.doA();
+		
+		
+		castC3naarB.doA();
+		castC3naarB.doB();
+
+		
+		
+		
 	}
 }
