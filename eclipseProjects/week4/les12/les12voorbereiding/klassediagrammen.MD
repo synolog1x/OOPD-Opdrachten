@@ -1,0 +1,2 @@
+![klassediagram "switch"](https://github.com/synolog1x/OOPD-Opdrachten/blob/master/images/switchklassediagram.png)
+![klassediagram "personenlijst"](https://github.com/synolog1x/OOPD-Opdrachten/blob/master/images/personenlijstklassediagram.png)
