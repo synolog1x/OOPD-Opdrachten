@@ -21,5 +21,4 @@ public class LichtSwitch extends Switch {
 			setAan(false);
 		}
 	}
-
 }
