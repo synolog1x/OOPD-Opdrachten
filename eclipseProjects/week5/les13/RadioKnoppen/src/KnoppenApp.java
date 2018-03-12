@@ -18,7 +18,9 @@ public class KnoppenApp extends PApplet {
 		RadioKnop radio1 = new RadioKnop(this, 50, 50, 50, 50);
 		RadioKnop radio2 = new RadioKnop(this, 100, 50, 50, 50);
 		RadioKnop radio3 = new RadioKnop(this, 150, 50, 50, 50);
-
+		
+		
+		
 		radio1.voegDoelwitToe(radio2);
 		radio1.voegDoelwitToe(radio3);
 		radio2.voegDoelwitToe(radio1);
@@ -34,13 +36,14 @@ public class KnoppenApp extends PApplet {
 	}
 
 	public void draw() {
+		background(0);
 		for (Knop k : radioKnoppen) {
 			k.tekenKnop();
 		}
 	}
 
 	public void mousePressed() {
-		for (RadioKnop k : radioKnoppen) {
+		for (Knop k : radioKnoppen) {
 			if (k.isMuisOverKnop()) {
 				k.handelInteractieAf();
 			}
