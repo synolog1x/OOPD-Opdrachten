@@ -10,6 +10,13 @@ public class WeergaveObjectContainer extends WeergaveObject {
 	
 	
 	@Override
+	public void geefMousePressedGebeurtenis(int muisX, int muisY) {
+		for(WeergaveObject wo: container) {
+			wo.geefMousePressedGebeurtenis(muisX, muisY);
+		}
+	}
+	
+	@Override
 	public boolean isMuisBinnen(int muisX, int muisY) {
 		if (muisX >= x && muisX < x + breedte && muisY >= y && muisY < y + hoogte) {
 			return true;
@@ -19,8 +26,17 @@ public class WeergaveObjectContainer extends WeergaveObject {
 	}
 	
 	@Override
+	public void doeStap() {
+		for(WeergaveObject wo: container) {
+			wo.doeStap();
+		}
+	}
+	
+	@Override
 	public void geefWeer(PApplet app, float startX, float startY) {
-		// TODO Auto-generated method stub
+		 for(WeergaveObject wo: container) {
+			 wo.geefWeer(app, x, y);
+		 }
 
 	}
 

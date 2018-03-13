@@ -16,10 +16,6 @@ public abstract class WeergaveObject {
 		isZichtbaar = true;
 	}
 
-	public void doeStap() {
-
-	}
-
 	public abstract void geefWeer(PApplet app, float startX, float startY);
 
 	protected abstract boolean isMuisBinnen(int muisX, int muisY);
@@ -27,7 +23,7 @@ public abstract class WeergaveObject {
 	public void geefMousePressedGebeurtenis(int muisX, int muisY) {
 		if (isMuisBinnen(muisX, muisY)) {
 			for (IReageerder reageerder : reageerdersLijst) {
-				reageerder.doeActie();
+				reageerder.doeActie(this);
 			}
 		}
 	}
@@ -42,6 +38,41 @@ public abstract class WeergaveObject {
 
 	public void verwijderReageerderToe(IReageerder reageerder) {
 		reageerdersLijst.remove(reageerder);
+	}
+
+	public void doeStap() {
+		if (!staatStil()) {
+			pasVersnellingToe();
+			pasSnelheidToe();
+		}
+	}
+
+	public void setSnelheid(float vx, float vy) {
+		this.vx = vx;
+		this.vy = vy;
+	}
+
+	public void setVersnelling(float ax, float ay) {
+		this.ax = ax;
+		this.ay = ay;
+	}
+
+	public void zetStil() {
+		vx = vy = ax = ay = 0;
+	}
+
+	public boolean staatStil() {
+		return (vx == 0 && vy == 0 && ax == 0 && ay == 0);
+	}
+
+	private void pasVersnellingToe() {
+		vx += ax;
+		vy += ay;
+	}
+
+	private void pasSnelheidToe() {
+		x += vx;
+		y += vy;
 	}
 
 }

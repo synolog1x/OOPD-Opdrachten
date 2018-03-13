@@ -7,7 +7,7 @@ public class Rechthoek extends Figuur {
 
 	}
 
-	// waarom startX en startY?
+
 	@Override
 	public void geefWeer(PApplet app, float startX, float startY) {
 		if (isZichtbaar) {
